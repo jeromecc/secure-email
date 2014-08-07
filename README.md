@@ -465,6 +465,7 @@ LEAP includes both a client application and turn-key system to automate the proc
 -----------------------------------------------------------
 
 [caliopen.org](https://caliopen.org)
+
 Caliopen is a private correspondance hub, gathering all private messages (email, XMPP, Twitter MP...) of its users into one single interface.
 
 It includes the servers (and a wizard help an admin with their configuration), the storage and indexation management, and a web client, all communicating through a public API. Our infrastructure shall be very easy to deploy.
