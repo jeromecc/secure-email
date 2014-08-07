@@ -31,6 +31,7 @@ Contents:
 1. [Email Infrastructure](#email-infrastructure)
    1. [Dark Mail Alliance](#dark-mail-alliance)
    1. [LEAP Encryption Access Project](#leap)
+   1. [Caliopen](#caliopen)
 1. [Post-email alternatives](#post-email-alternatives)
    1. [Bitmessage](#bitmessage)
    1. [Bote mail](#bote-mail)
@@ -459,6 +460,24 @@ LEAP includes both a client application and turn-key system to automate the proc
 * Source code: https://leap.se/source
 * Design documentation: https://leap.se/docs
 * License: mostly GPL v3, some MIT and AGPL.
+
+<a name="caliopen"></a>Caliopen
+-----------------------------------------------------------
+
+[caliopen.org](https://caliopen.org)
+Caliopen is a private correspondance hub, gathering all private messages (email, XMPP, Twitter MP...) of its users into one single interface.
+
+It includes the servers (and a wizard help an admin with their configuration), the storage and indexation management, and a web client, all communicating through a public API. Our infrastructure shall be very easy to deploy.
+
+The idea behind Caliopen is to offer a new way to aggregate private messages in one single timeline, in order to attract general public into using modern (but standard) cryptography solutions embeded in its web-client. If the real problem we face is the too low cost for mass surveillance then, by attracting a (really) big amount of people in using crypto - even a "not perfect" one - we can make it more expensive. But it needs to be attractive enough to motivate people in using even a sligthly more complicated solution. Hence the "all-private-messages" aggregation.
+
+Privacy enforcement is achieved by using modern protocols and encryption, including (but not limited to) DNSSEC, DANE, DKIM, DMARC at least and TLS on servers side, GPG and 2 factors authentification on client side. By choosing to implement a complete all-in-one infrastructure, we can transmit to our client enough informations about the protocols used to tranfer the message to display the level of confidentiality one can expect when reading it. Everything in Caliopen has a level of confidentiality attached (message, discussion, user, device...). Using those levels, we hope to push users in choosing better security options.
+
+Each installation also gets a confidentiality level (based on its technical choices and its local laws) and (if it chooses to join the Caliopen Org.) we will setup state of the art secure protocols an remove all meta-data between our members to gain a real confidentiality. Even devices can gain confidentiality with a correct setup that we will help to achieve.
+
+* Written in: Python, AngularJS
+* Source code: https://github.com/Caliopen
+* License: GPLv3 for current components
 
 <a name="post-email-alternatives"></a>Post-email alternatives
 ===========================================================
