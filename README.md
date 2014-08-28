@@ -75,6 +75,7 @@ Some of the major experimental approaches to solving the problem of public key d
 1. Network perspective: Validation by key endorsement (third party signatures), with audits performed via network perspective.
 1. Introductions: Discovery and validation of keys through acquaintance introduction.
 1. Mobile: Although too lengthy to manually transcribe, an app on a mobile device can be used to easily exchange keys in person (for example, via a QR code or bluetooth connection).
+1. Social Media validation as proof of public key ownership: [keybase.io](https://keybase.io) "Get a public key, safely, starting just with someone's social media username(s)."
 
 <a name="metadata-protection"></a>Metadata Protection
 -----------------------------------------------------------
